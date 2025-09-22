@@ -1,0 +1,401 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #74eeab, #f4f4f9); 
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding-bottom: 0
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap');
+
+header {
+    background-color: #333; 
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+
+header .BRIDGELogo h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem; 
+    color: #ffffff !important;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #2c6f2b; 
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    bottom: 0;
+}
+
+
+.companyList {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.companyList h1 {
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.companyList ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.companyList ul li p {
+    font-size: 1.8rem;
+}
+
+.companyList ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.companyList ul li a:hover {
+    color: #2c6f2b;
+    text-decoration: underline;
+}
+
+.link-btn {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+}
+
+
+h1, h2 {
+    color: #333;
+}
+
+.home {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.home .btn {
+    background-color: #94ffc4;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.tips ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.accordion {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.accordion-header {
+    background-color: #94ffc4;
+    color: #333;
+    cursor: pointer;
+    padding: 15px;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.accordion-header:hover {
+    background-color: #2c6f2b;
+    color: white;
+}
+
+.accordion-content {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px)}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+#openModal {
+    background-color: #94ffc4;
+    color: #333;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+#openModal:hover {
+    background-color: #2c6f2b;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+.carousel-container {
+    position: relative;
+    width: 50%;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    flex-shrink: 0;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-slide img {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#internship-results div {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #eef6ff;
+    border-left: 4px solid #007bff;
+}
+
+#internship-results a:hover {
+    text-decoration: underline;
+}
+
+#find-nearby-btn {
+    background-color: #94ffc4;
+    color: #333;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+#find-nearby-btn:hover {
+    background-color: #2c6f2b;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.section-subtitle {
+    font-size: 2.2rem;
+    color: #2c6f2b;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.company-entry {
+    margin-bottom: 30px;
+}
+
+.company-entry p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.companyList .company-entry {
+    margin-top: 20px;
+}
+
+.companyList .company-entry p {
+    font-size: 1.6rem;
+}
+
+.companyList .company-entry a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #2c6f2b;
+    border: 1px solid #2c6f2b;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.companyList .company-entry a:hover {
+    background-color: #2c6f2b;
+    color: white;
+}
+
+.companyList .company-entry button {
+    font-size: 1rem;
+    background-color: #94ffc4;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.companyList .company-entry button:hover {
+    background-color: #2c6f2b;
+    color: white;
+}
+
+.company-entry a, .company-entry button {
+    display: block;
+    margin-top: 10px;
+}
+
+.company-entry button#openModalWF {
+    font-size: 1rem;
+    background-color: #94ffc4;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.company-entry button#openModalWF:hover {
+    background-color: #2c6f2b;
+    color: white;
+}

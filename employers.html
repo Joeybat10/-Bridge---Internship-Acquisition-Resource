@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIDGE</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="BRIDGELogo">
+            <h1>BRIDGE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="employers.html">Employers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tips.html">Tips and Tricks</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="companyList">
+            <h1>Find Your Next Employer</h1>
+
+            <button id="find-nearby-btn">Find Internships Near Me</button>
+            <p id="location-status"></p>
+            <div id="internship-results"></div>
+
+            <h2 class="section-subtitle">Popular Businesses for Internships</h2>
+
+            <ul>
+
+                <li class="compnay-entry">
+                    <p><a href="employer1.html" class="link-btn">View Spotlight Business</a></p>
+                </li>
+
+
+                <li class="company-entry">
+                   <p><strong>Lowe's</strong></p>
+                    <a href="https://talent.lowes.com/us/en/students-and-grads" target="_blank">Visit Lowe's</a>
+                    <button id="openModalLowes">Quick Info</button>
+            
+                </li>
+                <li class="company-entry">
+                    <p><strong>Wells Fargo</strong></p>
+                    <a href="https://www.wellsfargo.com/about/careers/" target="_blank" class="link-btn">Visit Wells Fargo</a>
+                    <button id="openModalWF" class="QI-WF">Quick Info</button>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+
+    <div id="lowesModal" class="modal">
+        <div class="modal-content">
+            <span id="closeLowesModal" class="close">&times;</span>
+            <h2>Lowe's Opportunities</h2>
+            <p>Lowe's is a hardware store that offers great internships in computer science. They are a very popular option so apply as soon as possible and check their career page for new opportunities. </p>
+        </div>
+    </div>
+
+
+    <div id="wellsFargoModal" class="modal">
+        <div class="modal-content">
+            <span id="closeWellsFargoModal" class="close">&times;</span>
+            <h2>Wells Fargo Opportunities</h2>
+            <p>Wells Fargo is a bank that offers various internships in the computer science field. They offer paid, hands-on experience opportunities making them very sought after. </p>
+        </div>
+    </div>
+    
+    <footer>
+        <p> &copy; 2025 BRIDGE</p>
+    </footer>
+</body>
+</html>
